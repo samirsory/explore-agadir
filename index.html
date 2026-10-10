@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Discover Agadir, Taghazout, Imsouane and Paradise Valley. Your travel guide to Morocco's Atlantic coast.">
+<title>Explore Agadir | Travel Guide</title>
+<style>
+:root {
+  --bg:#07101f;
+  --panel:#101e32;
+  --blue:#20b8ff;
+  --muted:#b6c6d8;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+  margin:0;background:var(--bg);color:white;
+  font-family:Arial,Tahoma,sans-serif;line-height:1.7
+}
+header {
+  position:sticky;top:0;z-index:10;
+  background:#091526f5;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:15px;flex-wrap:wrap;padding:18px 6%;
+  border-bottom:1px solid #263b52
+}
+.logo {font-size:23px;font-weight:bold}
+.logo span,.accent {color:var(--blue)}
+nav {display:flex;gap:18px;flex-wrap:wrap}
+nav a {color:white;text-decoration:none;font-size:14px}
+nav a:hover {color:var(--blue)}
+button,.btn {
+  border:0;border-radius:25px;background:var(--blue);
+  color:#06111f;padding:12px 22px;font-weight:bold;
+  cursor:pointer;text-decoration:none;display:inline-block
+}
+.hero {
+  min-height:76vh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;text-align:center;
+  padding:70px 20px;
+  background:linear-gradient(#06101c99,#06101ce8),
+  url('https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1800&q=85')
+  center/cover
+}
+.hero h1 {font-size:clamp(36px,6vw,66px);margin:10px}
+.hero p {max-width:650px;color:#e0e9f4}
+section {padding:75px 7%;scroll-margin-top:100px}
+section h2 {font-size:32px;color:var(--blue)}
+.subtitle {color:var(--muted)}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:24px;margin-top:30px
+}
+.card {
+  background:var(--panel);border:1px solid #29425d;
+  border-radius:17px;overflow:hidden;
+  transition:transform .25s,border-color .25s
+}
+.card:hover {transform:translateY(-5px);border-color:var(--blue)}
+.card img {width:100%;height:205px;object-fit:cover;display:block}
+.card-content {padding:20px}
+.card h3 {margin:0 0 8px;color:#fff}
+.card p {color:var(--muted);font-size:14px}
+.info {
+  background:var(--panel);border-radius:16px;
+  padding:25px;margin-top:20px
+}
+.info p {color:var(--muted)}
+footer {text-align:center;background:#050c17;padding:25px;color:#a9b8c9}
+[dir="rtl"] {font-family:Tahoma,Arial,sans-serif}
+@media(max-width:650px){
+  header {justify-content:center;text-align:center}
+  nav {justify-content:center}
+  section {padding:55px 6%}
+}
+@media(prefers-reduced-motion:reduce){
+  html {scroll-behavior:auto}
+  .card {transition:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Explore <span>Agadir</span> 🇲🇦</div>
+  <nav>
+    <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+    <a href="#destinations" data-en="Destinations" data-ar="الوجهات">Destinations</a>
+    <a href="#activities" data-en="Activities" data-ar="الأنشطة">Activities</a>
+    <a href="#guide" data-en="Travel Guide" data-ar="دليل السفر">Travel Guide</a>
+    <a href="#contact" data-en="Contact" data-ar="التواصل">Contact</a>
+  </nav>
+  <button id="langBtn">العربية</button>
+</header>
+
+<main id="home" class="hero">
+  <h1 data-en="Discover Beautiful Agadir"
+      data-ar="اكتشف جمال أكادير">Discover Beautiful Agadir</h1>
+  <p data-en="Explore beaches, surfing, mountains, local food and unforgettable adventures along Morocco's Atlantic coast."
+     data-ar="استكشف الشواطئ وركوب الأمواج والجبال والأكلات المحلية والمغامرات على ساحل المغرب الأطلسي.">
+    Explore beaches, surfing, mountains, local food and unforgettable adventures along Morocco's Atlantic coast.
+  </p>
+  <a href="#destinations" class="btn"
+     data-en="Explore Destinations" data-ar="استكشف الوجهات">Explore Destinations</a>
+</main>
+
+<section id="destinations">
+  <h2 data-en="Top Destinations" data-ar="أفضل الوجهات السياحية">Top Destinations</h2>
+  <p class="subtitle" data-en="Beautiful places to discover around Agadir."
+     data-ar="أماكن رائعة لاكتشافها في أكادير ونواحيها.">
+    Beautiful places to discover around Agadir.
+  </p>
+
+  <div class="grid">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beach scenery" loading="lazy">
+      <div class="card-content">
+        <h3>Agadir Beach</h3>
+        <p data-en="Relax by the Atlantic Ocean and enjoy the seaside promenade."
+           data-ar="استرخِ بجانب المحيط الأطلسي واستمتع بالكورنيش.">
+          Relax by the Atlantic Ocean and enjoy the seaside promenade.
+        </p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Agadir+Beach+Morocco" target="_blank" rel="noopener noreferrer" class="btn">Google Maps</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1455729552865-3658a5d7f7f2?auto=format&fit=crop&w=800&q=80" alt="Surfing waves" loading="lazy">
+      <div class="card-content">
+        <h3>Taghazout</h3>
+        <p data-en="A coastal village famous for surfing and ocean views."
+           data-ar="قرية ساحلية مشهورة بركوب الأمواج والمناظر البحرية.">
+          A coastal village famous for surfing and ocean views.
+        </p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Taghazout+Morocco" target="_blank" rel="noopener noreferrer" class="btn">Google Maps</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Mountain scenery" loading="lazy">
+      <div class="card-content">
+        <h3>Paradise Valley</h3>
+        <p data-en="Explore beautiful mountain landscapes and natural pools."
+           data-ar="استكشف المناظر الجبلية الجميلة والبرك الطبيعية.">
+          Explore beautiful mountain landscapes and natural pools.
+        </p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Paradise+Valley+Agadir" target="_blank" rel="noopener noreferrer" class="btn">Google Maps</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=800&q=80" alt="Coastal landscape" loading="lazy">
+      <div class="card-content">
+        <h3>Imsouane</h3>
+        <p data-en="Discover a peaceful fishing village and beautiful surf spots."
+           data-ar="اكتشف قرية صيد هادئة وأماكن رائعة لركوب الأمواج.">
+          Discover a peaceful fishing village and beautiful surf spots.
+        </p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Imsouane+Morocco" target="_blank" rel="noopener noreferrer" class="btn">Google Maps</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="activities">
+  <h2 data-en="Things to Do" data-ar="الأنشطة السياحية">Things to Do</h2>
+  <div class="grid">
+    <div class="info">
+      <h3>🏄 Surfing</h3>
+      <p data-en="Discover surfing lessons and surf beaches around Taghazout."
+         data-ar="اكتشف دروس ركوب الأمواج وشواطئ السورف في تغازوت.">
+        Discover surfing lessons and surf beaches around Taghazout.
+      </p>
+    </div>
+    <div class="info">
+      <h3>🥾 Hiking</h3>
+      <p data-en="Explore scenic trails and mountain landscapes."
+         data-ar="استكشف المسارات الطبيعية والمناظر الجبلية.">
+        Explore scenic trails and mountain landscapes.
+      </p>
+    </div>
+    <div class="info">
+      <h3>🍲 Moroccan Food</h3>
+      <p data-en="Try tagine, couscous and traditional Moroccan mint tea."
+         data-ar="تذوق الطاجين والكسكس والشاي المغربي التقليدي.">
+        Try tagine, couscous and traditional Moroccan mint tea.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <h2 data-en="Travel Guide" data-ar="دليل السفر">Travel Guide</h2>
+  <div class="info">
+    <h3 data-en="Useful Information" data-ar="معلومات مفيدة">Useful Information</h3>
+    <p data-en="Currency: Moroccan Dirham (MAD)"
+       data-ar="العملة: الدرهم المغربي">
+      Currency: Moroccan Dirham (MAD)
+    </p>
+    <p data-en="Languages: Arabic and Amazigh; French is also widely used."
+       data-ar="اللغات: العربية والأمازيغية، والفرنسية مستعملة أيضاً على نطاق واسع.">
+      Languages: Arabic and Amazigh; French is also widely used.
+    </p>
+    <p data-en="Airport: Agadir Al Massira Airport (AGA)."
+       data-ar="المطار: مطار أكادير المسيرة (AGA).">
+      Airport: Agadir Al Massira Airport (AGA).
+    </p>
+    <p data-en="Transport: Taxis, buses and arranged transfers. Confirm fares before travelling."
+       data-ar="النقل: سيارات الأجرة والحافلات والنقل الخاص. تأكد من الأسعار قبل السفر.">
+      Transport: Taxis, buses and arranged transfers. Confirm fares before travelling.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 data-en="Contact & Information" data-ar="التواصل والمعلومات">Contact & Information</h2>
+  <div class="info">
+    <p data-en="Explore Agadir is an independent travel information website."
+       data-ar="Explore Agadir موقع مستقل للمعلومات السياحية.">
+      Explore Agadir is an independent travel information website.
+    </p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Agadir+Morocco" target="_blank" rel="noopener noreferrer"
+       data-en="Find Agadir on Maps" data-ar="شاهد أكادير على الخريطة">
+      Find Agadir on Maps
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Explore Agadir | Made with ❤️ in Morocco
+</footer>
+
+<script>
+const btn = document.getElementById("langBtn");
+let lang = "en";
+
+btn.addEventListener("click", () => {
+  lang = lang === "en" ? "ar" : "en";
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-en][data-ar]").forEach(el => {
+    el.textContent = el.dataset[lang];
+  });
+
+  btn.textContent = lang === "en" ? "العربية" : "English";
+});
+</script>
+</body>
+</html>
